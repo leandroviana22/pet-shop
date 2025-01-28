@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+.header{
+    width: 100vw;
+}
+
+.cabecario{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    margin: 40px 0 0 76px;
+    align-items: center;
+}
+
+.cabecario a{
+    gap: 30px;
+    font-size: 24px;
+    list-style-type: none;
+    text-decoration: none;
+    color: #989D9C;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cabecario button{
+    width: 130px;
+    height: 41px;
+    border-radius: 20.5px;
+    background-color: #665AE1;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.caixa_img{
+    margin-right: 120px;
+    width: 30vw;
+}
+
+.caixa_conteudo{
+    width: 30vw;
+}
+
+.caixa_conteudo h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: #515151;
+    text-transform: uppercase;
+}
+
+.caixa_conteudo h2{
+    font-size: 58px;
+    font-weight: 500;
+    color: #515151;
+}
+
+.caixa_conteudo p{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.caixa_conteudo button{
+    width: 239px;
+    height: 64px;
+    border-radius: 50px;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #ADFF00;
+    color: #000000;
+    border: none;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: none;
+    }
+
+    .caixa_conteudo h1{
+        font-size: 50px;
+        width: 263px;
+        margin-top: 24px;
+    }
+
+    .caixa_conteudo h2{
+        font-size: 30px;
+        width: 232px;
+        margin: 7px 0 17px;
+    }
+
+    .caixa_conteudo p{
+        display: none;
+    }
+
+    .caixa_conteudo button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .caixa{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .caixa_conteudo {
+        max-width: 80%;
+        display: contents;
+    }
+
+    .caixa_img{
+        max-width: 80%;
+        display: contents;
+    }
+
+    .caixa_img img{
+        width: 320px;
+    }
+}
