@@ -41,6 +41,14 @@
     cursor: pointer;
 }
 
+.cabecario button:hover{
+    opacity: .9;
+}
+
+.cabecario button:active{
+    opacity: .7;
+}
+
 .caixa{
     display: flex;
     align-items: center;
@@ -84,8 +92,18 @@
     text-transform: uppercase;
     font-weight: 700;
     background-color: #ADFF00;
-    color: #000000;
+    color: #292828;
     border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px #515151;
+}
+
+.caixa_conteudo button:hover{
+    opacity: 0.9;
+}
+
+.caixa_conteudo button:active{
+    opacity: .7;
 }
 
 @media screen and (max-width: 900px) {
